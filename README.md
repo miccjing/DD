@@ -3,7 +3,7 @@
 ```
 wget https://raw.githubusercontent.com/miccjing/DD/main/InstallNET.sh && \
 
-bash InstallNET.sh -d 10 -v 64 -a -firmware
+bash InstallNET.sh -d 10 -v 64 -a
 ```
 
 密码
