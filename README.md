@@ -86,7 +86,7 @@ curl -fsSL git.io/wgcf.sh | sudo bash
 wgcf register
 WGCF_LICENSE_KEY="" wgcf update
 wgcf generate
-sed -i 's/DNS = 1.1.1.1/DNS = 1.1.1.1,2606:4700:4700::1111/g' wgcf-profile.conf
+sed -i 's/DNS = 1.1.1.1/DNS = 8.8.8.8,2001:4860:4860::8888/g' wgcf-profile.conf
 vim wgcf-profile.conf
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 wg-quick up wgcf
