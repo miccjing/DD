@@ -32,7 +32,7 @@ apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-architect
 启用密钥认证
 ```
 sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config && \
-sed -i 's/#Port 22/Port 5353/g' /etc/ssh/sshd_config && \
+sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config && \
 mkdir -p ~/.ssh && \
 wget -P ~/.ssh https://cdn.jsdelivr.net/gh/miccjing/DD/authorized_keys && \
 systemctl restart sshd.service
