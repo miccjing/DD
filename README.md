@@ -24,12 +24,6 @@ apt update
 timedatectl set-timezone Asia/Singapore
 ```
 
-安装 Ookla Speedtest CLI
-```
-curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && \
-apt-get install speedtest
-```
-
 更新内核
 ```
 apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-architecture) linux-headers-$(dpkg --print-architecture) --install-recommends -y
