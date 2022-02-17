@@ -17,7 +17,8 @@ apt update && \
 apt install screen curl vim wget sudo unzip lsb-release -y && \
 echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list && \
 apt update
-apt upgrade
+apt upgrade -y
+apt clean
 ```
 
 修改时区
