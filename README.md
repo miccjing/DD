@@ -1,4 +1,4 @@
-## DD Debian10
+## DD Debian11
 
 ```
 wget https://raw.githubusercontent.com/miccjing/DD/main/InstallNET.sh && \
