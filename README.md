@@ -14,7 +14,7 @@ MoeClub.org
 安装常用工具添加 backports 源
 ```
 apt update && \
-apt install screen curl vim wget sudo unzip lsb-release -y && \
+apt install socat neofetch screen curl vim wget sudo unzip lsb-release -y && \
 echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list && \
 apt update
 apt upgrade -y
