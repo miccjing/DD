@@ -95,7 +95,7 @@ curl ip.p3terx.com
 
 开启bbr fq pie
 ```
-echo "net.core.default_qdisc=fq" > /etc/sysctl.d/bbr.conf && \
+echo "net.core.default_qdisc=fq_pie" > /etc/sysctl.d/bbr.conf && \
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.d/bbr.conf && \
 sysctl --system
 ```
