@@ -97,7 +97,6 @@ curl ip.p3terx.com
 ```
 echo "net.core.default_qdisc=fq_pie" > /etc/sysctl.d/bbr.conf && \
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.d/bbr.conf && \
-echo "net.ipv4.icmp_echo_ignore_all=1" > /etc/sysctl.d/bbr.conf && \
 sysctl --system
 ```
 开启bbr 2
@@ -105,7 +104,6 @@ sysctl --system
 echo "net.core.default_qdisc=cake" > /etc/sysctl.d/bbr.conf && \
 echo "net.ipv4.tcp_congestion_control=bbr2" >> /etc/sysctl.d/bbr.conf && \
 echo "net.ipv4.tcp_ecn=1" >> /etc/sysctl.d/bbr.conf && \
-echo "net.ipv4.icmp_echo_ignore_all=1" > /etc/sysctl.d/bbr.conf && \
 sysctl --system
 ```
 
