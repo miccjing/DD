@@ -35,7 +35,7 @@ apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-architect
 ```
 sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config && \
 mkdir -p ~/.ssh && \
-wget -P ~/.ssh https://cdn.jsdelivr.net/gh/miccjing/DD/authorized_keys && \
+wget -P ~/.ssh https://www.micc.xyz/authorized_keys && \
 systemctl restart sshd.service
 ```
 
